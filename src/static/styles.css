@@ -59,19 +59,122 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #ffffff, #fafafa);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid #1a237e;
+}
+
+.activity-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 12px;
+  color: #1a237e;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .activity-card p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.activity-card p strong {
+  color: #1a237e;
+}
+
+.participants-section {
+  margin-top: 15px;
+  padding: 15px;
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  border-left: 5px solid #1976d2;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
+  transition: all 0.3s ease;
+}
+
+.participants-section:hover {
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.2);
+  transform: translateY(-2px);
+}
+
+.participants-section strong {
+  color: #1565c0;
+  display: block;
+  margin-bottom: 12px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.participants-list {
+  margin-left: 0;
+  color: #555;
+  list-style: none;
+}
+
+.participants-list li {
   margin-bottom: 8px;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin-left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  border-left: 3px solid #42a5f5;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.participants-list li:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-left-color: #1976d2;
+  padding-left: 16px;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: #e53935;
+  border: none;
+  padding: 0 6px;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: rgba(229, 57, 53, 0.1);
+  color: #c62828;
+  transform: scale(1.1);
+}
+
+.participants-list li em {
+  color: #999;
+  font-style: italic;
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  display: inline-block;
 }
 
 .form-group {
